@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 8</title>
+</head>
+<body>
+    <input type="button" value="Chơi" onclick="play()">
+<script>
+    function play() {
+        debugger
+        let min = parseInt(prompt("nhập số thứ nhất"));
+        let max = parseInt(prompt("nhập số thứ 2"));
+        let a = (Math.floor(Math.random() * max)+(min));
+        for (i = 0; i < 3; i++) {
+            let b = parseInt(prompt("đoán số"));
+            if (a === b) {
+                alert("Win");
+                break;
+            } else if (a < b) {
+                alert("bé hơn");
+            } else {
+                alert("lớn hơn");
+            }
+        } alert("hết lượt đoán")
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 3</title>
+</head>
+<body>
+<script>
+    // hình 1
+    for(i = 0; i <= 4; i++) {
+        for (j = 0; j <= i; j++) {
+            document.write("*");
+        }
+        document.write("</br>");
+    }
+    // hình 2
+    for(i = 4; i >= 0; i--) {
+        for (j = 0; j <= i; j++) {
+            document.write("*");
+        }
+        document.write("</br>");
+    }
+    // hình 3
+    for (i = 4; i >= 0; i--) {
+        for (j = 0; j < i; j++){
+            document.write("&nbsp&nbsp");
+        }
+        for (k=4; k >= i; k--){
+            document.write("*");
+        }
+        document.write("<br/>");
+    }
+    // hình 4
+    debugger
+    for (i = 4; i >= 0; i--) {
+        for (k = 4; k > i; k--) {
+            document.write("&nbsp&nbsp");
+        }
+        for (j = 0; j <= i; j++) {
+            document.write("*");
+        }
+        document.write("<br/>");
+    }
+</script>
+
+</body>
+</html>

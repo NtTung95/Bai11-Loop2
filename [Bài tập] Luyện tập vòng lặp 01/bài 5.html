@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài5</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let f1 = 0;
+    let f2 = 1;
+    let total = 0
+    while (count<20){
+        fn = f1 + f2;
+        total = total + fn;
+        f1 = f2;
+        f2 = fn;
+        count++;
+
+        document.write(fn + " <br/>");
+    }
+    document.write("tổng 20 số đầu tiên trong dãy fibonaccy = " + total);
+</script>
+</body>
+</html>

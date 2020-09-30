@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài4</title>
+</head>
+<body>
+    <script>
+        let n = prompt("nhập n")
+        let count = 0;
+        let f1 = 0;
+        let f2 = 1;
+        while (count<n){
+            fn = f1 + f2;
+            f1 = f2;
+            f2 = fn;
+            document.write(fn + "  <br/>");
+            if (fn%5==0){
+                document.write(fn + " là số đầu tiên trong dãy fibonacci chia hết cho 5")
+                break;
+            }
+            count++;
+        }
+    </script>
+</body>
+</html>
